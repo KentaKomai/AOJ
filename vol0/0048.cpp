@@ -17,7 +17,8 @@ using namespace std;
 int main() {
 	double weight;
 	string strWeight;
-	while(cin>>weight, !cin.eof()){
+	while(cin>>weight){
+		if(cin.eof()) break;
 		strWeight = "";
 		if(weight <= LIGHT_FLY) strWeight = "light fly";
 		else if(weight <= FLY) strWeight = "fly";
